@@ -1,0 +1,16 @@
+EMployee_ID = 1
+EMployee_Name = Manishbhai
+Salary=100000.000000
+
+EMployee_ID = 2
+EMployee_Name = Pratikbhai
+Salary=100000.000000
+
+EMployee_ID = 3
+EMployee_Name = Darshan
+Salary=40000.000000
+
+EMployee_ID = 4
+EMployee_Name = Dishank
+Salary=15000.000000
+
