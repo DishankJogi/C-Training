@@ -1,6 +1,7 @@
-// C program to compare two text file contents 
-#include <stdio.h>// Processor Directives
-#include <string.h>// Processor Directives
+// C program to Compare two text file.
+
+#include <stdio.h>// Preprocessor Directives 
+#include <string.h>// Preprocessor Directives
 
 #define MAX_LINE_LENGTH 100
 
@@ -9,7 +10,8 @@ int main()
     FILE *fp1, *fp2;//file Pointer
     char line1[MAX_LINE_LENGTH], line2[MAX_LINE_LENGTH];//temp string storages
     int line_num = 1, diff = 0;// counters
-
+	
+	//open the file in the read mode 
     fp1 = fopen("file1.txt", "r");
     fp2 = fopen("file2.txt", "r");
 	
@@ -25,23 +27,24 @@ int main()
         if (strcmp(line1, line2) != 0)//Temp Stroing string comparision
 		{
             diff = 1;
-            printf("Difference found at line %d:\n", line_num);
-            printf("File 1: %s\n", line1);
-            printf("File 2: %s\n", line2);
         }
         line_num++;
     }
-	// closing the file 
+	// Closing the file 
     fclose(fp1);
     fclose(fp2);
 
     if (diff) 
 	{
-		return 1;
+		// Data Not Matching
+		printf("1\n");
+		printf("Data Not Matched");
     } 
 	else 
 	{
-        return 0;
+		//Data Match
+        printf("0\n");
+		printf("Data Matched");
     }
 
     

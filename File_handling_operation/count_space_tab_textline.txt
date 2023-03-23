@@ -1,0 +1,3 @@
+Hello Amigos, 
+	I am Dishank Jogi 
+This code for the counting number of space,lines,tab given in text file.
